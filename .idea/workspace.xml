@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de3b7a5d-fe90-4c2c-aac1-31e6fb72d122" name="Changes" comment="Static" />
+    <list default="true" id="de3b7a5d-fe90-4c2c-aac1-31e6fb72d122" name="Changes" comment="Static 2">
+      <change beforePath="$PROJECT_DIR$/client/src/pages/not-found.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/not-found.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,8 +107,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744005585012</updated>
-      <workItem from="1744005586232" duration="3949000" />
+      <workItem from="1744005586232" duration="4172000" />
     </task>
+    <task id="LOCAL-00001" summary="Static 2">
+      <option name="closed" value="true" />
+      <created>1744011048463</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744011048463</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +137,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed" />
     <MESSAGE value="Static" />
-    <option name="LAST_COMMIT_MESSAGE" value="Static" />
+    <MESSAGE value="Static 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Static 2" />
   </component>
 </project>
