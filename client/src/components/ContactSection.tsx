@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { apiRequest } from '@/lib/queryClient';
 import { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 
@@ -37,7 +36,31 @@ const ContactSection = () => {
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
     try {
-      await apiRequest('POST', '/api/contact', data);
+      // Check if we're in production environment (Vercel deployment)
+      const isProduction = import.meta.env.MODE === 'production';
+      
+      if (isProduction) {
+        // In production, use a form service like FormSubmit (no API key needed)
+        // FormSubmit is a free service that forwards form submissions to an email
+        const formSubmitEndpoint = 'https://formsubmit.co/your-email@example.com'; // Replace with your email
+        
+        await fetch(formSubmitEndpoint, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            ...data,
+            _subject: `New contact from ${data.name}`,
+          }),
+        });
+      } else {
+        // In development, simulate form submission
+        await new Promise(resolve => setTimeout(resolve, 800));
+        console.log('Form submitted:', data);
+      }
+      
       toast({
         title: "Message sent!",
         description: "Thank you for contacting us. We'll respond shortly.",
@@ -45,6 +68,7 @@ const ContactSection = () => {
       });
       reset();
     } catch (error) {
+      console.error('Form submission error:', error);
       toast({
         title: "Something went wrong",
         description: "Please try again later.",
