@@ -1,0 +1,59 @@
+Build a modern and attractive landing page for a printing business called Ayaan Print Industries.
+
+🎨 Design Requirements:
+	•	Sleek, clean layout with modern UI and responsive design.
+	•	Use animated transitions and hover effects (like fade-ins, smooth scroll, etc.).
+	•	Integrate a video section on the landing page – not full screen, but in a styled container (like a card or section).
+	•	Use Tailwind CSS or clean CSS. Feel free to use libraries like Animate.css or AOS (Animate on Scroll) for animations.
+
+📑 Website Sections and Content:
+
+🔝 Hero Section:
+	•	Title: Ayaan Print Industries
+	•	Tagline: All Printing Solutions Under One Roof
+	•	Subtext: High-quality and affordable printing services customized to your needs.
+	•	Add a call-to-action button: “Get a Quote” and “View Portfolio”
+
+🧾 About Us Section:
+	•	Ayaan Print Industries is a one-stop destination for all your printing needs. With years of experience and a commitment to excellence, we deliver premium printing solutions tailored to your business.
+	•	We blend technology with creativity to ensure your prints stand out.
+
+🛠️ Services Section (use icons or images):
+	•	Offset Printing
+	•	Digital Printing
+	•	Screen Printing
+	•	UV Printing
+	•	Sublimation Printing
+	•	Flex & Vinyl Printing
+	•	Corporate Stationery Printing
+	•	Custom Merchandise
+	•	Each service can have a small description or tooltip on hover.
+
+🎥 Video Section:
+	•	Include a video element (YouTube embed or local video tag).
+	•	Style it inside a card or responsive container.
+	•	Title: “Watch Us in Action”
+	•	Description: Take a look behind the scenes of our printing magic.
+
+📸 Portfolio/Work Section:
+	•	Use placeholder images for now.
+	•	Grid layout with lightbox on click.
+	•	Caption examples: “Brochure Design”, “Business Cards”, “Event Banners”, “Merchandise”, etc.
+
+📞 Contact Section:
+	•	Phone: +91-99999-99999
+	•	Email: info@ayaanprint.com
+	•	Location: New Delhi, India
+	•	Contact form with Name, Email, Message
+	•	Add a map embed (optional)
+
+🦶 Footer:
+	•	Quick links: Home, Services, Portfolio, Contact
+	•	Social media icons (Instagram, Facebook)
+	•	Copyright © 2025 Ayaan Print Industries
+
+💡 Bonus:
+	•	Add scroll animations using AOS library.
+	•	Smooth scrolling for navigation.
+	•	Use a consistent color scheme (white background, primary color: deep blue or purple, accent color: orange or teal).
+	•	Mobile-friendly and fast loading.
